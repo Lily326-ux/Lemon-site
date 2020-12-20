@@ -1,0 +1,20 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
+
+@import 'config';
+
+@import 'variables';
+@import 'settings';
+@import 'fonts';
+
+@import 'buttons';
+@import 'mixins';
+
+@import 'header';
+@import 'footer';
+
+@import 'main_home';
+
+
+body {
+  background-color: #eaeaea;
+}
