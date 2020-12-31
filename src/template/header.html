@@ -1,26 +1,55 @@
 <header class="header">
- <div class="container-fluid">
+ <div class="container">
+   <div class="d-none d-md-block">
+    <div class="header-logo">
+      <img class="header-logo_img" src="../img/Logo_copy.png" alt="Logo">
+    </div>
+   </div>
    <div class="header-content">
       <div class="row d-flex align-items-center justify-content-between">
-        <div class="col-lg-2 d-flex justify-content-end">
+        <div class="col-lg-2 col-md-2 col-sm-3 col-3">
           <div class="header-content_logo">
             <img class="header-content_logo__img" src="../img/Logo_copy.png" alt="logo">
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-8 col-md-7 d-none d-md-block">
           <div class="header-content_navbar">
             <div class="header-content_navbar__items">
               <a href="#" class="header-content_navbar__items_link">home</a>
-              <a href="#" class="header-content_navbar__items_link">recipes</a>
+              <a href="#" class="header-content_navbar__items_link hover_state_link">recipes</a>
               <a href="#" class="header-content_navbar__items_link">photo galleries</a>
               <a href="#" class="header-content_navbar__items_link">videos</a>
               <a href="#" class="header-content_navbar__items_link">all categories</a>
+              <div class="drop-down_menu hover_state-dropdown">
+                <ul class="drop-down_menu__list">
+                  <li class="drop-down_menu__list_item">
+                    <a class="drop-down_menu__list_item__link" href="#">recommended</a>
+                  </li>
+                  <li class="drop-down_menu__list_item">
+                    <a class="drop-down_menu__list_item__link" href="#">popular</a>
+                  </li>
+                  <li class="drop-down_menu__list_item">
+                    <a class="drop-down_menu__list_item__link" href="#">quick & easy</a>
+                  </li>
+                  <li class="drop-down_menu__list_item">
+                    <a class="drop-down_menu__list_item__link" href="#">healthy</a>
+                  </li>
+                  <li class="drop-down_menu__list_item">
+                    <a class="drop-down_menu__list_item__link" href="#">newest</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-7">
           <div class="header-content_search">
-            <input type="search" class="header-content_search__input">
+            <input class="header-content_search__input" type="search" placeholder="find a recipe">
+          </div>
+        </div>
+        <div class="col-sm-3 col-2">
+          <div class="burger-menu">
+            <img class="burger-menu_img" src="../img/burger.png" alt="burger">
           </div>
         </div>
       </div>

@@ -1,7 +1,17 @@
 @font-face {
   font-family: 'josefin_normal';
   src: url('../fonts/josefinsans-variablefont_wght-webfont.woff2') format('woff2'),
-       url('../fonts/josefinsans-variablefont_wght-webfont.woff') format('woff');
+       url('../fonts/josefinsans-variablefont_wght-webfont.woff') format('woff'),
+       url('../fonts/josefinsans-variablefont_wght-webfont.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'playfair_normal';
+  src: url('../fonts/playfairdisplay-variablefont_wght-webfont.woff2'),
+       url('../fonts/playfairdisplay-variablefont_wght-webfont.woff'),
+       url('../fonts/playfairdisplay-variablefont_wght-webfont.ttf');
   font-weight: normal;
   font-style: normal;
 }

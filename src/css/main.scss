@@ -8,13 +8,14 @@
 
 @import 'buttons';
 @import 'mixins';
+@import 'media';
 
 @import 'header';
 @import 'footer';
 
-@import 'main_home';
+@import 'main-content';
 
 
-body {
+.container-fluid {
   background-color: #eaeaea;
 }

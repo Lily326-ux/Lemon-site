@@ -1,29 +1,160 @@
+.header-logo {
+  height: 530px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  @include width991px {
+    height: 450px;
+    padding-top: 20px;
+  }
+  &_img {
+    width: 382px;
+    height: 159px;
+  }
+}
+
 .header {
   &-content {
+    @include box-shadow(0 0 13px $--color-primary-3, $--color-primary-2, 30px);
     &_logo {
+      display: flex;
+      justify-content: flex-end;
+      @include width767px {
+        justify-content: center;
+      }
       &__img {
         width: 87px;
         height: 36px;
+        max-width: none;
+        @include width991px {
+          width: 77px;
+          height: 31px;
+        }
+        @include width575px {
+          width: 60px;
+          height: 24px;
+        }
       }
     }
     &_navbar {
+      position: relative;
       &__items {
         display: flex;
         justify-content: space-around;
+        @include width991px {
+          justify-content: space-between;
+        }
         &_link {
           text-transform: uppercase;
           font-family: $josefin_normal;
-          font-weight: 300;
+          font-weight: 900;
           font-size: 16px;
+          @include width991px {
+            font-size: 11px;
+          }
         }
       }
     }
     &_search {
-      display: flex;
-      justify-content: flex-start;
       &__input {
-        width: 90%;
+        border: 1px solid $--color-primary-3;
+        height: 28px;
+        width: 100%;
+        font-family: $josefin_normal;
+        outline: none;
+        background: url('../img/Search_Icon.png') no-repeat 5% 50%;
+        font-size: 12px;
+        color: $--color-primary-1;
+        text-transform: uppercase;
+        text-align: center;
+        @include width1199px {
+          padding:2px 0px 0px 15px;
+        }
+        @include width991px {
+          height: 25px;
+          font-size: 10px;
+          padding: 0px;
+        }
+        @include width767px {
+          border: 0px;
+          background: url('../img/Search_Icon.png') no-repeat 0% 45%;
+          padding: 0px;
+          font-size: 12px;
+        }
+        @include width575px {
+          border: 0px;
+          background: url('../img/Search_Icon.png') no-repeat 0% 45%;
+          font-size: 11px;
+          padding-left: 5px;
+        }
+        &:focus {
+          border-color: $--color-primary-3;
+        }
       }
+    }
+  }
+}
+
+.drop-down_menu {
+  position: absolute;
+  top: 35px;
+  left: 75px;
+  opacity: 0.5;
+  width: 150px;
+  @include box-shadow(1px 3px 7px $--color-primary-3, $--color-primary-2, 24px 26px 18px 26px)
+  @include width1199px {
+    left: 45px;
+  }
+  @include width991px {
+    padding: 7px 15px 5px 15px;
+    width: 110px;
+    top: 20px;
+    left: 10px;
+  }
+  &__list {
+    &_item {
+      &__link {
+        color: #383737;
+        font-family: $josefin_normal;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 900;
+        @include width991px {
+          font-size: 9px;
+        }
+        &:active {
+          color: $--color-primary-1;
+          text-decoration: underline solid $--color-primary-1;
+        }
+      }
+    }
+  }
+}
+
+.burger-menu {
+  display: none;
+  @include width767px {
+    display: flex;
+    justify-content: center;
+    padding-left: 25px;
+  }
+  @include width575px {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+  }
+  &_img {
+    max-width: none;
+    @include width767px {
+      width: 30px;
+      height: 20px;
+      max-width: none;
+    }
+    @include width575px {
+      width: 20px;
+      height: 15px;
+      max-width: none;
     }
   }
 }

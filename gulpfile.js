@@ -1,10 +1,10 @@
 "use strict";
 
 var config = {
-    server: {
-        baseDir: './dist'
-    },
-    notify: false
+    server:'./dist',
+    notify: false,
+    watch: true,
+    injectChanges: false
 };
 
 const path = {
@@ -92,7 +92,8 @@ gulp.task('scss:build', (done) => {
 
 gulp.task('css:build', (done) => {
     gulp.src(path.src.css)
-        .pipe(gulp.dest(path.dist.css));
+        .pipe(gulp.dest(path.dist.css))
+        .pipe(browserSync.reload({stream: true}));
     done();
 });
 

@@ -1,0 +1,52 @@
+.bgImage {
+  background-size: cover;
+  background: url(../img/Photo.png) no-repeat;
+  box-shadow: 0 0 13px $--color-primary-3;
+  margin-top: 80px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 0px 90px;
+  &_logo {
+    display: flex;
+    &__img {
+      width: 250px;
+      height: 100px;
+    }
+  }
+  &_title {
+    padding-top: 30px;
+    &__span {
+      color: $--color-primary-4;
+      font-family: 'playfair_normal';
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+  &_text {
+    padding-top: 26px;
+    &__p {
+      font-family: 'josefin_normal';
+      font-weight: 600;
+    }
+  }
+  &_link {
+    padding: 25px 0px 30px 0px;
+    &__a {
+      padding: 9px 14px;
+      font-size: 12px;
+      text-transform: uppercase;
+      border: 1px solid $--color-primary-3;
+    }
+  }
+  &_ellipses {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    &__img {
+      padding: 0px 10px 20px 10px;
+    }
+  }
+}
